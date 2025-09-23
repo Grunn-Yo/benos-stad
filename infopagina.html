@@ -15,7 +15,7 @@
 
   <script>
     // Data met info over markers
-    const info = {
+    const infopagina = {
       "11": {
         title: "Voormalig Kempkensberg(?)",
         text: "Hier stond vroeger het oude Kempkensberg-gebouw, later vervangen door het DUO-gebouw."
@@ -36,10 +36,10 @@
 
     // Content vullen
     const container = document.getElementById("content");
-    if (info[id]) {
+    if (infopagina[id]) {
       container.innerHTML = `
-        <h1>${info[id].title}</h1>
-        <p>${info[id].text}</p>
+        <h1>${infopagina[id].title}</h1>
+        <p>${infopagina[id].text}</p>
       `;
     } else {
       container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
