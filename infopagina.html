@@ -7,6 +7,7 @@
     body { font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; }
     h1 { color: darkblue; }
     .back { margin-top: 20px; display: inline-block; }
+    img { max-width: 100%; margin-top: 10px; }
   </style>
 </head>
 <body>
@@ -14,25 +15,30 @@
   <a href="index.html" class="back">⬅ Terug naar de kaart</a>
 
   <script>
-    // Data met info over markers
-    const infopagina = {
-      "46_1": {
-        title: "Ambtswoning Petrus Camper",
+    // Handmatige data voor tekst en afbeelding per marker-ID
+    const infopaginaData = {
+      "461": {
         text: "Dit is de Ambtswoning die Petrus Camper toegewezen kreeg toen hij professor werd aan de Rijksuniversiteit Groningen, in 1763. De woning grenst aan de Hortustuin."
+      },
+      "471": {
+        text: "Hier werd de bekende schilder Jozef Israels geboren in 1824."
       }
-
+      // Voeg hier meer markers toe
     };
 
-    // ID uit de URL halen, bv. ?id=11
+    // URL-parameters uitlezen
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
+    const title = params.get("title"); // Titel uit de marker
 
-    // Content vullen
     const container = document.getElementById("content");
-    if (infopagina[id]) {
+
+    if (id && infopaginaData[id]) {
+      const item = infopaginaData[id];
       container.innerHTML = `
-        <h1>${infopagina[id].title}</h1>
-        <p>${infopagina[id].text}</p>
+        <h1>${title}</h1>
+        <p>${item.text}</p>
+        ${item.img ? `<img src="${item.img}" alt="${title}">` : ""}
       `;
     } else {
       container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
