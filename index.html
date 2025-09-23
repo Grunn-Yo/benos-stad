@@ -26,11 +26,14 @@
 
     var markers = [];
 
-    function addMarker(lat, lng, id, tooltipText) {
+   function addMarker(aflevering, id, lat, lng, extraText) {
+      var tooltipText = "Beno's Stad " + aflevering;
+      if (extraText) tooltipText += " <br/> " + extraText;
+      var linkId = aflevering + "_" + id;
       var marker = L.marker([lat, lng]).addTo(map);
       marker.bindTooltip(tooltipText, { permanent: false });
       marker.on('click', function() {
-        window.open('infopagina.html?id=' + id, '_blank');
+        window.open('info.html?id=' + linkId, '_blank');
       });
       markers.push(marker);
     }
@@ -61,6 +64,7 @@
   </script>
 </body>
 </html>
+
 
 
 
