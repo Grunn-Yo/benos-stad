@@ -140,3 +140,10 @@ addMarker(44, 1, 53.21772243391641, 6.574025093662375, "Biljartfabriek Bierling-
 
 addMarker(45, 1, 53.18602490841084, 6.590797877868495, "Stadion Esserberg Be Quick");
 addMarker(45, 2, 53.222168607549015, 6.568721813791477, "Architectenbureau Evert van Linge");
+
+addMarker(46, 1, 53.222476116212704, 6.558052071786093, "Ambtswoning Petrus Camper");
+
+addMarker(47, 1, 53.217325265925844, 6.564237296626887, "Geboortehuis Jozef Israels");
+addMarker(47, 2, 53.217264100388554, 6.565691221058471, "Woning Jozef Israels");
+addMarker(47, 3, 53.22063491812742, 6.568661607441888, "Kunstlievend genootschap Pictura");
+addMarker(47, 4, 53.21338909506399, 6.569841565303255, "Jozef Israelsmonument");
