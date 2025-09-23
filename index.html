@@ -30,7 +30,7 @@
       var marker = L.marker([lat, lng]).addTo(map);
       marker.bindTooltip(tooltipText, { permanent: false });
       marker.on('click', function() {
-        window.open('info.html?id=' + id, '_blank');
+        window.open('infopagina.html?id=' + id, '_blank');
       });
       markers.push(marker);
     }
@@ -164,6 +164,7 @@
   </script>
 </body>
 </html>
+
 
 
 
