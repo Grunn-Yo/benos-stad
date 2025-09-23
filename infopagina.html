@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Beno's Stad - Info</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; }
+    h1 { color: darkblue; }
+    .back { margin-top: 20px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <div id="content"></div>
+  <a href="BenosStad.html" class="back">⬅ Terug naar de kaart</a>
+
+  <script>
+    // Data met info over markers
+    const info = {
+      "11": {
+        title: "Voormalig Kempkensberg(?)",
+        text: "Hier stond vroeger het oude Kempkensberg-gebouw, later vervangen door het DUO-gebouw."
+      },
+      "12": {
+        title: "Borstbeeld Carl Rabenhaupt",
+        text: "Dit borstbeeld herdenkt Carl von Rabenhaupt, de verdediger van Groningen in 1672."
+      },
+      "13": {
+        title: "Café De Groote Griet",
+        text: "Een bekend café, genoemd naar het kanon van Rabenhaupt dat de stad verdedigde."
+      }
+    };
+
+    // ID uit de URL halen, bv. ?id=11
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    // Content vullen
+    const container = document.getElementById("content");
+    if (info[id]) {
+      container.innerHTML = `
+        <h1>${info[id].title}</h1>
+        <p>${info[id].text}</p>
+      `;
+    } else {
+      container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
+    }
+  </script>
+</body>
+</html>
