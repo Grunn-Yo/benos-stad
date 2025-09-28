@@ -4,3 +4,7 @@
       "47_1": {
         text: "Hier werd de schilder Jozef Israels geboren."
       }
+
+      "47_2": {
+        text: "Hier woonde de schilder Jozef Israels."
+      }
