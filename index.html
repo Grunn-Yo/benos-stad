@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenStreetMap Beno's Stad</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <div id="map" style="width: 1000px; height: 650px;"></div>
+  <div>
+    <label for="minNumber">Vanaf aflevering:</label>
+    <input type="number" id="minNumber">
+    <label for="maxNumber">Tot en met aflevering:</label>
+    <input type="number" id="maxNumber">
+    <button onclick="filterMarkers()">Filter</button>
+  </div>
+
+  <script>
+    var map = L.map('map', {center: [53.219384324385025, 6.568212652979871], zoom: 13});
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var markers = [];
+
+    function addMarker(afleveringen, id, lat, lng, extraText) {
+      // Zorg dat afleveringen altijd een array is
+      if (!Array.isArray(afleveringen)) afleveringen = [afleveringen];
+
+      var tooltipText = "Beno's Stad " + afleveringen.join(", ");
+      if (extraText) tooltipText += " <br/> " + extraText;
+
+      var linkId = afleveringen.join("_") + "_" + id;
+      var marker = L.marker([lat, lng]).addTo(map);
+      marker.bindTooltip(tooltipText, { permanent: false });
+
+      // Koppel alle afleveringen aan deze marker
+      marker.afleveringen = afleveringen;
+
+      marker.on('click', function() {
+        window.open(
+          'infopagina.html?id=' + linkId + "&title=" + encodeURIComponent(extraText),
+          '_blank'
+        );
+      });
+
+      markers.push(marker);
+    }
+    
+    </script>
+    <script src="markers.js"></script>
+
+    <script>
+    function filterMarkers() {
+      var minNumber = parseFloat(document.getElementById('minNumber').value);
+      var maxNumber = parseFloat(document.getElementById('maxNumber').value);
+
+      markers.forEach(function(marker) {
+        var inRange = marker.afleveringen.some(function(num) {
+          return num >= minNumber && num <= maxNumber;
+        });
+
+        if (inRange) {
+          marker.addTo(map);
+        } else {
+          map.removeLayer(marker);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

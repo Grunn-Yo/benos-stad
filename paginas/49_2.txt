@@ -1,0 +1,19 @@
+<p>De fabriek is geopend in 1842. </br>
+<a href="https://www.filmbankgroningen.nl/archief/av0406/" target="_blank">Hier</a> is een video te vinden van het productieproces van het aardappelmeel, uit de jaren 1945-1955.</p>
+
+
+  <figure>
+    <a href="https://historischarchief.midden-groningen.nl/ontdekken/op-de-kaart/gemeente-hoogezand-sappemeer/foxhol" target="_blank">
+      <img src="https://historischarchief.midden-groningen.nl/images/artikelen/op_de_kaart/Foxhol/wa_scholten.jpg" alt="Aardappelmeelfabriek Foxhol, omstreeks 1950/1960">
+    </a>
+    <figcaption>Aardappelmeelfabriek Foxhol, omstreeks 1950/1960.</figcaption>
+  </figure>
+  
+<figure>
+  <a href="https://munnikbrandadvies.nl/project/avebe-foxhol/avebe-foxhol-7/"target="_blank">
+    <img src="https://munnikbrandadvies.nl/wp-content/uploads/2018/11/AVEBE-FOXHOL-7-e1544778793440.jpg" alt="huidige Avebe terein in Foxhol">
+  </a>
+  <figcaption>Het Avebe terrein in Foxhol in 2018.</figcaption>
+</figure>
+
+<p> Zie <a href="https://www.youtube.com/watch?v=K0fsWvztA98" target="_blank">Beno's Stad 49: W.A. Scholten</a>.

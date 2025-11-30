@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Beno's Stad - Info</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+    h1 { color: darkblue; }
+    .back { margin-top: 20px; display: inline-block; }
+    img { max-width: 100%; margin-top: 10px; margin: 0;}
+  </style>
+</head>
+<body>
+  <div id="content"></div>
+  
+<script src="infoinhoud.js"></script>
+
+  <script>
+     
+    // URL-parameters uitlezen
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const title = params.get("title"); // Titel uit de marker
+
+    const container = document.getElementById("content");
+
+    if (id) {
+  // Pad naar het tekstbestand per pagina
+  const filePath = `paginas/${id}.txt`;
+
+  fetch(filePath)
+    .then(response => {
+      if (!response.ok) throw new Error("Pagina niet gevonden");
+      return response.text();
+    })
+    .then(html => {
+      container.innerHTML = `<h1>${title}</h1>` + html;
+    })
+    .catch(err => {
+      container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
+      console.error(err);
+    });
+    } else {
+      container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
+    }
+  </script>
+</body>
+</html>
