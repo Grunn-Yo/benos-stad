@@ -20,4 +20,10 @@ Van 1972 tot 1994 stond deze buste onderaan de trap van de loopbrug tussen het o
    <figcaption>Het borstbeeld tegen de noordgevel van het stadhuis.</figcaption>
 </figure>
 
+<figure>
+<img src="images/1_2_Rabenhaupt.jpg" alt="Beschrijving van de foto">
+
+   <figcaption>Huidige positie naast het goudkantoor (2025).</figcaption>
+</figure>
+
 <p> Zie <a href="https://www.youtube.com/watch?v=OMLHA_iOXbo" target="_blank">Beno's Stad 1: Bommen Berend</a>.
