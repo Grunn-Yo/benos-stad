@@ -1,8 +1,10 @@
+<link rel="stylesheet" href="../css/style.css">
+
 <p>In 1907 werd melkfabriek "Stad en Lande" opgericht. Na twee jaar werd de stoomzuivelfabriek en melkinrichting aan de Noorderhaven gebouwd. In 1923 volgde een faillissement.</p>
 
 <figure>
   <a href="https://nl.wikipedia.org/wiki/Stad_en_Lande_(zuivelfabriek)" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Stad_en_Lande_bij_avond.jpg/1280px-Stad_en_Lande_bij_avond.jpg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Stad_en_Lande_bij_avond.jpg/1280px-Stad_en_Lande_bij_avond.jpg" alt="Zuivelfabriek">
   </a>
   <figcaption>Aanzicht Noorderhaven.</figcaption>
 </figure>
