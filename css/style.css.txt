@@ -1,51 +1,112 @@
+/* ===== Basis ===== */
+
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-  background-color: #f8f8f8;
-  color: #333;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
+  margin: 0;
+  background-color: #f4f1ea;
+  color: #2c2c2c;
 }
+
+/* Centreren van de inhoud */
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 8px;
+}
+
+/* ===== Titels ===== */
 
 h1 {
   text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  color: #7a6a52;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/* ===== Tekst ===== */
 
 p {
   margin-bottom: 20px;
+  font-size: 1.05em;
 }
 
-figure {
-  margin: 40px 0;
-  text-align: center;
+/* Eerste alinea iets groter */
+main p:first-of-type {
+  font-size: 1.15em;
 }
 
-figure {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
-  margin: 1.5%;
-}
-
-figure img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-figcaption {
-  font-size: 0.9em;
-  color: #555;
-  margin-top: 10px;
-}
+/* ===== Links ===== */
 
 a {
-  color: #0055aa;
+  color: #8b0000;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* ===== Afbeeldingen ===== */
+
+figure {
+  margin: 50px 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.02);
+}
+
+figcaption {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #5a5a5a;
+  font-style: italic;
+}
+
+/* ===== Galerij (optioneel) ===== */
+
+.galerij {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galerij figure {
+  flex: 1 1 260px;
+  margin: 0;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+  main {
+    padding: 25px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
 }
