@@ -3,6 +3,7 @@
 <figure>
   <a href="https://nl.wikipedia.org/wiki/Stad_en_Lande_(zuivelfabriek)" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Stad_en_Lande_bij_avond.jpg/1280px-Stad_en_Lande_bij_avond.jpg">
+  </a>
   <figcaption>Aanzicht Noorderhaven.</figcaption>
 </figure>
 
