@@ -21,7 +21,7 @@ Van 1972 tot 1994 stond deze buste onderaan de trap van de loopbrug tussen het o
 </figure>
 
 <figure>
-   <img src="../images/1_2_Rabenhaupt.jpg" alt="Huidige positie borstbeeld">
+   <img src="images/1_2_Rabenhaupt.jpg" alt="Huidige positie borstbeeld">
    <figcaption>Huidige positie, naast het goudkantoor (2025).</figcaption>
 </figure>
 
