@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../css/style.css">
+
 <p>Melkfabriek "De Ommelanden" is de opvolger van zuivelfabriek "Stad en Lande", die in 1923 failliet ging. In 1952-1953 vond er een negen maanden durende staking plaats onder het personeel. In 1995 is de fabriek gesloten. Tegenwoordig zijn er verschillende bedrijven gevestigd in het pand. </p>
 
 <figure>

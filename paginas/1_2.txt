@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../css/style.css">
+
 <p>Carl von Rabenhaupt was een Duitse officier die de Stad Groningen verdedigde tegen de aanval van Bommen Berend in 1672.</p>
 
 <p>
