@@ -12,8 +12,40 @@ h1 {
   text-align: center;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
+figure {
+  margin: 40px 0;
+  text-align: center;
+}
+
+figure {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin: 1.5%;
+}
+
 figure img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
+
+a {
+  color: #0055aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
