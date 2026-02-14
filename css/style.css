@@ -2,7 +2,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.7;
+  line-height: 1.5;
   margin: 0;
   background-color: #f7f0ff;
   color: #2c2c2c;
@@ -13,9 +13,9 @@ main {
   max-width: 900px;
   margin: 60px auto;
   padding: 50px;
-  background-color: #ffe0f2;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  border-radius: 8px;
+  background-color: #ddefff;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
 }
 
 /* ===== Titels ===== */
