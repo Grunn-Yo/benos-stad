@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beno's Stad - Info</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-    h1 { color: darkblue; }
-    .back { margin-top: 20px; display: inline-block; }
-    img { max-width: 100%; margin-top: 10px; margin: 0;}
-  </style>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-  <div id="content"></div>
-  
-<script src="infoinhoud.js"></script>
+  <main>
+    <div id="content"></div>
+  </main>
 
   <script>
      
@@ -34,7 +32,7 @@
       return response.text();
     })
     .then(html => {
-      container.innerHTML = `<h1>${title}</h1>` + html;
+      container.innerHTML = title ? `<h1>${title}</h1>` + html : html;
     })
     .catch(err => {
       container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
