@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="../css/style.css">
-
-<main>
 <p>In 1907 werd melkfabriek "Stad en Lande" opgericht. Na twee jaar werd de stoomzuivelfabriek en melkinrichting aan de Noorderhaven gebouwd. In 1923 volgde een faillissement.</p>
 
 <figure>
@@ -11,4 +8,3 @@
 </figure>
 
 <p> Zie <a href="https://www.youtube.com/watch?v=bXWS2KSVh44" target="_blank">Beno's Stad 5: De Ommelanden</a>.
-</main>
