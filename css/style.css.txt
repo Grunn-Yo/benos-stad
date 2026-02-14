@@ -1,7 +1,7 @@
 /* ===== Basis ===== */
 
 body {
-  font-family: "Arial", "Times New Roman", serif;
+  font-family: Arial, sans-serif;
   line-height: 1.7;
   margin: 0;
   background-color: #f7f0ff;
@@ -25,6 +25,7 @@ h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
   letter-spacing: 1px;
+  color: darkblue;
 }
 
 h2 {
