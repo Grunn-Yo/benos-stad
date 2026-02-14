@@ -12,17 +12,25 @@
 
 <body>
   <main>
-  <div id="map" style="width: 1000px; height: 650px; max-width: 100%;"></div>
-  <div>
-    <label for="minNumber">Vanaf aflevering:</label>
-    <input type="number" id="minNumber">
-    <label for="maxNumber">Tot en met aflevering:</label>
-    <input type="number" id="maxNumber">
-    <button onclick="filterMarkers()">Filter</button>
-  </div>
+    <h1> Beno's Stad op de kaart</h1>
+    <div id="map" style="width: 1000px; height: 650px; max-width: 100%;"></div>
+    <div>
+      <label for="episodeNumber">Zoek aflevering:</label>
+      <input type="number" id="episodeNumber">
+      <button onclick="filterMarkers()">Zoek</button>
+      <button onclick="resetMarkers()">Reset</button>
+    </div>
   </main>
+
   <script>
-    var map = L.map('map', {center: [53.219384324385025, 6.568212652979871], zoom: 13});
+
+    var originalCenter = [53.219384324385025, 6.568212652979871];
+    var originalZoom = 13;
+
+    var map = L.map('map', {
+      center: originalCenter,
+      zoom: originalZoom
+    });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -55,25 +63,52 @@
     }
     
     </script>
+
     <script src="markers.js"></script>
 
     <script>
     function filterMarkers() {
-      var minNumber = parseFloat(document.getElementById('minNumber').value);
-      var maxNumber = parseFloat(document.getElementById('maxNumber').value);
+      var episodeNumber = parseFloat(document.getElementById('episodeNumber').value);
+      
+      if (isNaN(episodeNumber)) {
+        resetMarkers();
+        return;
+      }
+
+      var visibleMarkers = [];
 
       markers.forEach(function(marker) {
-        var inRange = marker.afleveringen.some(function(num) {
-          return num >= minNumber && num <= maxNumber;
-        });
+        var match = marker.afleveringen.includes(episodeNumber);
 
-        if (inRange) {
+        if (match) {
           marker.addTo(map);
+          visibleMarkers.push(marker);
         } else {
           map.removeLayer(marker);
         }
       });
+
+      if (visibleMarkers.length > 0) {
+        var group = new L.featureGroup(visibleMarkers);
+        map.flyToBounds(group.getBounds(), {
+          padding: [50, 50],
+          duration: 0.7
+        });
+  }
     }
+
+    function resetMarkers() {
+      markers.forEach(function(marker) {
+        marker.addTo(map);
+      });
+      document.getElementById('episodeNumber').value = "";
+
+      // Terug naar originele positie
+      map.flyTo(originalCenter, originalZoom, {
+        duration: 0.7
+      });
+    }
+
   </script>
 </body>
 </html>
