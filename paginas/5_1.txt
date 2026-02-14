@@ -4,7 +4,7 @@
   <a href="https://nl.wikipedia.org/wiki/Stad_en_Lande_(zuivelfabriek)" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Stad_en_Lande_bij_avond.jpg/1280px-Stad_en_Lande_bij_avond.jpg" alt="Zuivelfabriek">
   </a>
-  <figcaption>Aanzicht Noorderhaven (2017).</figcaption>
+  <figcaption>Aanzicht Noorderhaven (2017) Test.</figcaption>
 </figure>
 
 <p> Zie <a href="https://www.youtube.com/watch?v=bXWS2KSVh44" target="_blank">Beno's Stad 5: De Ommelanden</a>.
