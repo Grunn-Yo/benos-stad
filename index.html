@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenStreetMap Beno's Stad</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 
 <body>
+  <main>
   <div id="map" style="width: 1000px; height: 650px;"></div>
   <div>
     <label for="minNumber">Vanaf aflevering:</label>
@@ -18,7 +20,7 @@
     <input type="number" id="maxNumber">
     <button onclick="filterMarkers()">Filter</button>
   </div>
-
+  </main>
   <script>
     var map = L.map('map', {center: [53.219384324385025, 6.568212652979871], zoom: 13});
 
