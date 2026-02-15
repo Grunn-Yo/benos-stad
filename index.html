@@ -20,6 +20,12 @@
       <button onclick="filterMarkers()">Zoek</button>
       <button onclick="resetMarkers()">Reset</button>
     </div>
+    <label for="statusFilter">Status:</label>
+    <select id="statusFilter">
+      <option value="all">Alle</option>
+      <option value="finished">Alleen met infopagina</option>
+      <option value="unfinished">Alleen zonder infopagina</option>
+    </select>
   </main>
 
   <script>
@@ -36,9 +42,27 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    var purpleIcon = new L.Icon({
+      iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png',
+      shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
+
+    var blueIcon = new L.Icon({
+      iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png',
+      shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
+
     var markers = [];
 
-    function addMarker(afleveringen, id, lat, lng, extraText) {
+    function addMarker(afleveringen, id, lat, lng, extraText, isAf) {
       // Zorg dat afleveringen altijd een array is
       if (!Array.isArray(afleveringen)) afleveringen = [afleveringen];
 
@@ -46,11 +70,16 @@
       if (extraText) tooltipText += " <br/> " + extraText;
 
       var linkId = afleveringen.join("_") + "_" + id;
-      var marker = L.marker([lat, lng]).addTo(map);
+      var iconToUse = isAf ? purpleIcon : blueIcon;
+      var marker = L.marker([lat, lng], {
+        icon: iconToUse
+      }).addTo(map);
       marker.bindTooltip(tooltipText, { permanent: false });
 
       // Koppel alle afleveringen aan deze marker
       marker.afleveringen = afleveringen;
+
+      marker.isAf = isAf; // true of false
 
       marker.on('click', function() {
         window.open(
@@ -69,18 +98,24 @@
     <script>
     function filterMarkers() {
       var episodeNumber = parseFloat(document.getElementById('episodeNumber').value);
-      
-      if (isNaN(episodeNumber)) {
-        resetMarkers();
-        return;
-      }
+      var statusFilter = document.getElementById('statusFilter').value;
 
       var visibleMarkers = [];
 
       markers.forEach(function(marker) {
-        var match = marker.afleveringen.includes(episodeNumber);
+        // Aflevering check
+        var episodeMatch = isNaN(episodeNumber) || marker.afleveringen.includes(episodeNumber);
 
-        if (match) {
+        // Status check
+        var statusMatch = true;
+        if (statusFilter === "finished") {
+          statusMatch = marker.isAf === true;
+        } 
+        else if (statusFilter === "unfinished") {
+          statusMatch = marker.isAf === false;
+        }
+
+        if (episodeMatch && statusMatch) {
           marker.addTo(map);
           visibleMarkers.push(marker);
         } else {
@@ -102,6 +137,10 @@
         filterMarkers();
       }
     }
+
+    document.getElementById('statusFilter').addEventListener('change', function() {
+       filterMarkers();
+    });
 
     function resetMarkers() {
       markers.forEach(function(marker) {

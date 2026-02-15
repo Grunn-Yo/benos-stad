@@ -5,5 +5,4 @@ Het is lang de opvatting geweest dat deze berg de naam 'Kempkensberg' heeft geha
 
 
 <p> Zie <a href="https://www.youtube.com/watch?v=OMLHA_iOXbo" target="_blank">Beno's Stad 1: Bommen Berend</a>.
-
-test
+</p>

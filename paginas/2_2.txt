@@ -4,9 +4,9 @@
 
 <figure>
    <a href="https://www.facebook.com/wijkhelpman/photos/a.1983986091654438/5717627591623584/?type=3&from_lookaside=1" target="_blank">
-     <img src="https://scontent.frtm1-1.fna.fbcdn.net/v/t39.30808-6/487742052_9335931283126512_2460168076925935086_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gc24YZ_eL_UQ7kNvwG7gHir&_nc_oc=AdncqKqkW_ZasKucM0rq9KMhSgjQqUkGKzqh07scp0bwwm_Jw7bF7Bjf3TE2KC21BKw&_nc_zt=23&_nc_ht=scontent.frtm1-1.fna&_nc_gid=aP5MTSRNNpxCPM9avCORGg&oh=00_Afi8StZCd83dS5D7p0ElhGmhuqSPF9JdbcftP4pJlHM_ww&oe=69144EB0" alt="Gemeente H.B.S., 1924">
+     <img src="https://scontent.frtm1-3.fna.fbcdn.net/v/t39.30808-6/487742052_9335931283126512_2460168076925935086_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2ZBdEk5DE_cQ7kNvwHz9W7U&_nc_oc=Admq8xmwCNMsQldD3xmFdH0XwVqO5LIc3e7P_OZlEvWihBeJRpSrvefOXwR_JqH2PhM&_nc_zt=23&_nc_ht=scontent.frtm1-3.fna&_nc_gid=ihV0nBeDTwAbybzELuR_UA&oh=00_AfsewQ7BPoUZRbHhDTXcpNvMlDs3OMv6S4cTc0ihBm2lfg&oe=699824B0" alt="Gemeente H.B.S., 1924">
    </a>
    <figcaption>Gemeente H.B.S., 1924.</figcaption>
 </figure>
 
-<p> Zie <a href="https://www.youtube.com/watch?v=56Cz5rjDwwI" target="_blank">Beno's Stad 2: Jacques Wallage</a>.
+<p> Zie <a href="https://www.youtube.com/watch?v=56Cz5rjDwwI" target="_blank">Beno's Stad 2: Jacques Wallage</a>.</p>
