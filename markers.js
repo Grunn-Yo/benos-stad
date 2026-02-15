@@ -17,7 +17,7 @@ addMarker([4, 33], 2, 53.2177047022648, 6.555008169042122, "Het Kasteel <br/> Mi
 addMarker(4, 3, 53.217214774891765, 6.5548483930653285, "Melkweg", false);
 
 addMarker(5, 1, 53.219766038766984, 6.556883083156669, "Voormalig Stoomzuivelfabriek en Melkinrichting 'Stad en Lande'", false);
-addMarker(5, 2, 53.230331064070455, 6.532055257526586, "Voormalig melkfabriek 'De Ommelanden'", false);
+addMarker(5, 2, 53.230331064070455, 6.532055257526586, "Voormalig melkfabriek 'De Ommelanden'", true);
 
 addMarker(6, 1, 53.213238165577614, 6.561308609175683, "Voormalig zusterhuis", false);
 addMarker(6, 2, 53.21254827637292, 6.563800458150554, "Voormalig kraamkliniek Diakonessenhuis", false);
@@ -161,7 +161,7 @@ addMarker(49, 8, 53.21977855039271, 6.5708353066637395, "Locatie voormalig Kinde
 
 addMarker(50, 1, 52.72851317687617, 6.997733247048916, "Turfstrooiselfabriek Klazienaveen", false);
 addMarker(50, 2, 53.22218089205805, 6.57147611242013, "Snieschoule", false);
-addMarker(50, 3, 53.228148019947724, 6.564470320835432, "Voormalige locatie paardendekstation", false);
+addMarker(50, 3, 53.228148019947724, 6.564470320835432, "Voormalige locatie paardendekstation", true);
 addMarker(50, 4, 53.201950669921686, 6.546877418245486, "Stadspark met paardenrenbaan", false);
 addMarker(50, 5, 53.161444839969974, 6.573083413123367, "Paalkoepel", false);
 addMarker(50, 6, 53.16069509761415, 6.571210390954868, "Clubhuis Paterswoldse watersportvereniging", false);
