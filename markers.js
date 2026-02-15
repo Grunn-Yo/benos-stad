@@ -167,6 +167,11 @@ addMarker(50, 5, 53.161444839969974, 6.573083413123367, "Paalkoepel");
 addMarker(50, 6, 53.16069509761415, 6.571210390954868, "Clubhuis Paterswoldse watersportvereniging");
 addMarker(50, 7, 53.202783724662275, 6.544667398700391, "Scholtenmonument");
 
+addMarker(52, 1, 53.21665067743388, 6.569968498354901, "Schimmelpenninck Huys");
+addMarker(52, 2, 53.22371443142726, 6.561404364261742, "Locatie Nieuwe Kazerne");
+addMarker(52, 3, 53.217225092097, 6.56034499563685, "Locatie Rooms-Katholieke Kerk");
+addMarker(52, 4, 53.145770726176856, 6.575515285935835, "Buitenhuis Lemferdinge");
+
 
 
 

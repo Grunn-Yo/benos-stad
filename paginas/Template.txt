@@ -5,4 +5,11 @@
   <figcaption>Caption.</figcaption>
 </figure>
 
+<figure>
+  <a href="URL_website" target="_blank">
+    <img src="URL_foto" alt="">
+  </a>
+  <figcaption>Caption.</figcaption>
+</figure>
+
 <p> Zie <a href="https://" target="_blank">Beno's Stad nr</a>.
