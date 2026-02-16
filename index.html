@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpenStreetMap Beno's Stad</title>
+  <title>Beno's Stad kaart</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="css/style.css">
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -69,24 +69,30 @@
       var tooltipText = "Beno's Stad " + afleveringen.join(", ");
       if (extraText) tooltipText += " <br/> " + extraText;
 
-      var linkId = afleveringen.join("_") + "_" + id;
       var iconToUse = isAf ? purpleIcon : blueIcon;
       var marker = L.marker([lat, lng], {
         icon: iconToUse
       }).addTo(map);
       marker.bindTooltip(tooltipText, { permanent: false });
 
+      marker.isAf = isAf; // true of false
+
       // Koppel alle afleveringen aan deze marker
       marker.afleveringen = afleveringen;
 
-      marker.isAf = isAf; // true of false
+      
+      //Verander afleveringen in een string voor de URL 
+      let afleveringenJSON = JSON.stringify(afleveringen);
+      let afleveringenParam = encodeURIComponent(afleveringenJSON);
 
       marker.on('click', function() {
         window.open(
-          'infopagina.html?id=' + linkId + "&title=" + encodeURIComponent(extraText),
+          'infopagina.html?afl=' + afleveringenParam + '&id=' + id + "&title=" + encodeURIComponent(extraText),
           '_blank'
         );
       });
+
+
 
       markers.push(marker);
     }

@@ -13,18 +13,21 @@
     <div id="content"></div>
   </main>
 
+  <script src="paginaData.js"></script>
+
   <script>
      
-    // URL-parameters uitlezen
+    // URL-parameters uitlezen    
     const params = new URLSearchParams(window.location.search);
+    const aflJSON = params.get("afl");
     const id = params.get("id");
-    const title = params.get("title"); // Titel uit de marker
-
+    const title = params.get("title");
+    let afl = JSON.parse(decodeURIComponent(aflJSON));
     const container = document.getElementById("content");
 
     if (id) {
   // Pad naar het tekstbestand per pagina
-  const filePath = `paginas/${id}.txt`;
+  const filePath = `paginas/${afl[0]}_${id}.txt`;
 
   fetch(filePath)
     .then(response => {
@@ -32,7 +35,33 @@
       return response.text();
     })
     .then(html => {
-      container.innerHTML = title ? `<h1>${title}</h1>` + html : html;
+
+    //  Links genereren voor alle afleveringen
+        const linksHTML = afl.map(nr => {
+          const data = afleveringenData[nr];
+          if (!data) return "";
+
+          return `
+            <p>
+              Zie <a href="${data.url}" target="_blank">
+                Beno's Stad ${nr}: ${data.titel}
+              </a>.
+            </p>
+          `;
+        }).join("");
+
+      container.innerHTML =
+        ${title ? `<h1>${title}</h1>` : ""}
+
+        <div class="page-content">
+          ${html}
+        </div>
+
+        <div class="bottom-bar">
+            <hr>
+            ${linksHTML}
+          </div>
+        `;
     })
     .catch(err => {
       container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
