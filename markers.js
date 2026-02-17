@@ -67,7 +67,7 @@ addMarker(20, 1, 53.219156, 6.55806156, "Voormalige zone raamprostitutie", false
 addMarker(20, 2, 53.21509, 6.56553, "Nieuwstad <br/> Zone raamprostitutie", false);
 addMarker(20, 3, 53.208595, 6.59624, "Voormalige tippelzone Bornholmstraat", false);
 
-addMarker(21, 1, 53.216737, 6.5634036, "Korenbeurs", false);
+addMarker(21, 1, 53.216737, 6.5634036, "Korenbeurs", true);
 
 addMarker(22, 1, 53.218549697934435, 6.566947064061545, "Voormalige locatie politiebureau <br/> tot 1905", false);
 addMarker(22, 2, 53.21146893647456, 6.573840548845822, "Voormalig hulpbureau politie <br/> 1875-1966", false);
@@ -109,7 +109,7 @@ addMarker(30, 1, 53.217929281918515, 6.5705846325242385, "Jazzcafé de Spieghel"
 addMarker(31, 1, 53.22343856102672, 6.56280023364719, "1e Fongers Rijwielenfabriek", false);
 addMarker([11, 31], 2, 53.2073715614918, 6.5728019595609695, "2e Fongers Rijwielenfabriek", false);
 
-addMarker(33, 1, 53.23927549296387, 6.534625713294005, "WSN-Gebouw", false);
+addMarker(33, 1, 53.23927549296387, 6.534625713294005, "WSN-Gebouw", true);
 
 addMarker(34, 1, 53.22835781143251, 6.565458822247965, "Woonblok Bernoulliplein <br/> Ontworpen door Jo Boer", false);
 addMarker([12, 34], 2, 53.22988384867348, 6.574480338132674, "Noorderbad <br/> Ontworpen door Jo Boer", false);
