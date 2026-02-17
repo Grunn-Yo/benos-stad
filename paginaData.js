@@ -21,6 +21,44 @@ const afleveringenData = {
     titel: "Het Kasteel / Noorderpoortcollege",
     ondertitel: "Een nieuw schoolgebouw",
     url: "https://www.youtube.com/watch?v=dbhCEHQksvw"
-  }
+  },
+
+  5: {
+    titel: "De Ommelanden",
+    ondertitel: "De laatste Groningse melkfabriek",
+    url: "https://www.youtube.com/watch?v=bXWS2KSVh44"
+  },
+
+  46: {
+    titel: "Petrus Camper",
+    ondertitel: "Een succesvol hoogleraar en het nieuwe stadhuis",
+    url: "https://www.youtube.com/watch?v=Z7wjnD70Cns"
+  },
+
+  47: {
+    titel: "Jozef Israels",
+    ondertitel: "Vismarkt, Pictura en Langs Moeders Graf",
+    url: "https://www.youtube.com/watch?v=r3Pn0hcHY_o"
+  },
+
+  49: {
+    titel: "W.A. Scholten",
+    ondertitel: "De eerste Nederlandse multinational",
+    url: "https://www.youtube.com/watch?v=K0fsWvztA98"
+  },
+
+  50: {
+    titel: "Jan Evert Scholten",
+    ondertitel: "Villa Gelria, het Stadspark en de Paalkoepel",
+    url: "https://www.youtube.com/watch?v=LzTcQE2AhU8"
+  },
+
+  52: {
+    titel: "Dumonceau",
+    ondertitel: "Jean Baptiste du Monceau en het Schimmelpenninckhuys",
+    url: "https://www.youtube.com/watch?v=n66G061fEgE"
+  },
+
+  
 
 };
