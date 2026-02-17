@@ -29,6 +29,18 @@ const afleveringenData = {
     url: "https://www.youtube.com/watch?v=bXWS2KSVh44"
   },
 
+  21: {
+    titel: "De Korenbeurs",
+    ondertitel: "Van graanhandel tot spiritueel centrum Oibibio",
+    url: "https://www.youtube.com/watch?v=FHbofj9l1K0"
+  },
+
+  33: {
+    titel: "Willem Frederik Hermans",
+    ondertitel: "Onder professoren",
+    url: "https://www.youtube.com/watch?v=Aot_M2ghfeg"
+  },
+
   46: {
     titel: "Petrus Camper",
     ondertitel: "Een succesvol hoogleraar en het nieuwe stadhuis",

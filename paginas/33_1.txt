@@ -1,0 +1,8 @@
+<p>Willem Frederik Hermans had een lectoraat aan het geografisch instituut, dat was gevestigd in het WSN-gebouw op de zevende verdieping.</p>
+
+<p>Tegenwoordig heet het gebouw Duisenberg building, en is er de Faculteit Economie en Bedrijfskunde gevestigd.</p>
+
+<figure>
+  <img src="images/33_1_WSN.jpg">
+  <figcaption>Duisenberg building (2026).</figcaption>
+</figure>
