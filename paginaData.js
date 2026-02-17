@@ -41,6 +41,12 @@ const afleveringenData = {
     url: "https://www.youtube.com/watch?v=Aot_M2ghfeg"
   },
 
+  34: {
+    titel: "Architect Jo Boer",
+    ondertitel: "Bernoulliplein, Amsterdamse School en De Ploeg",
+    url: "https://www.youtube.com/watch?v=YBcS1gDtWRY"
+  },
+
   46: {
     titel: "Petrus Camper",
     ondertitel: "Een succesvol hoogleraar en het nieuwe stadhuis",

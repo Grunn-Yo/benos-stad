@@ -1,0 +1,10 @@
+<p>De snoepgoedfabriek van Tonnema, ontworpen door Jo Boer, werd geopend in 1955. Hier wordt KING pepermunt geproduceerd. </p>
+
+<figure>
+  <img src="images/34_3_KING1.jpg">
+</figure>
+
+<figure>
+  <img src="images/34_3_KING2.jpg">
+  <figcaption>De KING fabriek in 2025</figcaption>
+</figure>

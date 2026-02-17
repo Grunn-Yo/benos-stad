@@ -44,6 +44,7 @@ addMarker(11, 4, 53.19552859127521, 6.579792547963918, "Locatie Babyhuis Prinses
 
 addMarker(12, 1, 53.211472051522534, 6.557343916197458, "Hoofdgebouw voormalig gemeentelijk badhuis <br/> 1881 - 1955", false);
 addMarker(12, 2, 53.194793733286744, 6.578911545119826, "Helperbad <br/> sinds 1925", false);
+addMarker([12, 34], 3, 53.22988384867348, 6.574480338132674, "Noorderbad", false);
 
 addMarker(13, 1, 53.2156, 6.57085, "Volksgaarkeuken en kosthuizen", false);
 addMarker(13, 2, 53.21535, 6.57047, "Nieuwbouw Zuiderdiep 1998", false);
@@ -111,9 +112,8 @@ addMarker([11, 31], 2, 53.2073715614918, 6.5728019595609695, "2e Fongers Rijwiel
 
 addMarker(33, 1, 53.23927549296387, 6.534625713294005, "WSN-Gebouw", true);
 
-addMarker(34, 1, 53.22835781143251, 6.565458822247965, "Woonblok Bernoulliplein <br/> Ontworpen door Jo Boer", false);
-addMarker([12, 34], 2, 53.22988384867348, 6.574480338132674, "Noorderbad <br/> Ontworpen door Jo Boer", false);
-addMarker(34, 3, 53.02705480345685, 5.6739489005230785, "KING-fabriek <br/> Ontworpen door Jo Boer", false);
+addMarker(34, 1, 53.22835781143251, 6.565458822247965, "Woonblokken Bernoulliplein", false);
+addMarker(34, 2, 53.02705480345685, 5.6739489005230785, "KING-fabriek", true);
 
 addMarker(35, 1, 53.22272272156979, 6.557841289598511, "Oude Hortus Botanicus", false);
 
