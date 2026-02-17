@@ -110,7 +110,7 @@ addMarker(30, 1, 53.217929281918515, 6.5705846325242385, "Jazzcafé de Spieghel"
 addMarker(31, 1, 53.22343856102672, 6.56280023364719, "1e Fongers Rijwielenfabriek", false);
 addMarker([11, 31], 2, 53.2073715614918, 6.5728019595609695, "2e Fongers Rijwielenfabriek", false);
 
-addMarker(33, 1, 53.23927549296387, 6.534625713294005, "WSN-Gebouw", true);
+addMarker(33, 1, 53.23927549296387, 6.534625713294005, "WSN-gebouw", true);
 
 addMarker(34, 1, 53.22835781143251, 6.565458822247965, "Woonblokken Bernoulliplein", false);
 addMarker(34, 2, 53.02705480345685, 5.6739489005230785, "KING-fabriek", true);

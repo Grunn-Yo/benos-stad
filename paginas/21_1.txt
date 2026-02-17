@@ -1,6 +1,6 @@
 <p>Vanaf 1750 vond graanhandel uit de provincie Groningen plaats op de vismarkt. In 1774 werd er op de Vismarkt een houten loge opgericht die diende als beurs. Sinds 1778 was het verboden om graan te verkopen buiten de beurs. In 1825/26 werd het houten beursgebouw vervangen door een stenen gebouw. Daarna werd in 1865 vervolgens het huidige beursgebouw geopend, ontworpen door stadsbouwmeester van Beusekom. Op de nok staad Mercurius, de god van de handel, en naast de ingang de goden van de scheepvaart (Neptunus) en de landbouw (Ceres).  </p>
 
 <figure>
-  <img src="images/21_2Korenbeurs.jpg">
+  <img src="images/21_1_Korenbeurs.jpg">
   <figcaption>De Korenbeurs aan de Vismarkt (2025).</figcaption>
 </figure>
