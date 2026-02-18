@@ -118,7 +118,7 @@ addMarker(34, 2, 53.02705480345685, 5.6739489005230785, "KING-fabriek", true);
 addMarker(35, 1, 53.22272272156979, 6.557841289598511, "Oude Hortus Botanicus", false);
 
 addMarker(37, 1, 53.24462963362889, 6.547089413882324, "Locatie Kasteel Selwerd", false);
-addMarker(37, 2, 53.24503641344943, 6.530569956731923, "Locatie Tweede Kasteel Selwerd", false);
+addMarker(37, 2, 53.24503641344943, 6.530569956731923, "Locatie Tweede Kasteel Selwerd", true);
 addMarker(37, 3, 53.23959507747501, 5.99064884359942, "Schierstins Feanwâlden", false);
 
 addMarker(39, 1, 53.20203634669874, 6.576153530149379, "Borstbeeld Majoor Lodewijk Thomson", false);

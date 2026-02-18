@@ -47,6 +47,12 @@ const afleveringenData = {
     url: "https://www.youtube.com/watch?v=YBcS1gDtWRY"
   },
 
+  37: {
+    titel: "Rudolf Prediker",
+    ondertitel: "Het tweede kasteel Selwerd op het Zernikecomplex",
+    url: "https://www.youtube.com/watch?v=kgzD66sJgxY"
+  },
+
   46: {
     titel: "Petrus Camper",
     ondertitel: "Een succesvol hoogleraar en het nieuwe stadhuis",

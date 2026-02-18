@@ -1,0 +1,11 @@
+<p>In 1999 werden hier de restanten van een middeleeuws kasteel gevonden. Het kasteel werd gebouwd rond 1220-1230 op een oude wierde. Het is waarschijnlijk bewoond geweest door Rudolf Prediker. In 1357 is het steenhuis omgetrokken. </p>
+
+<figure>
+  <img src="images/37_2_Locatie.jpg">
+  <figcaption>Tegenwoordig is er van het kasteel niets meer te zien (2026).</figcaption>
+</figure>
+
+<figure>
+  <img src="images/37_2_Bordje.jpg">
+  <figcaption>Informatiebord op locatie (Beno Hofman).</figcaption>
+</figure>
