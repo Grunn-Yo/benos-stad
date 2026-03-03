@@ -124,11 +124,11 @@ addMarker(37, 3, 53.23959507747501, 5.99064884359942, "Schierstins Feanwâlden",
 addMarker(39, 1, 53.20203634669874, 6.576153530149379, "Borstbeeld Majoor Lodewijk Thomson", false);
 addMarker(39, 2, 53.20602906781497, 6.571688753413007, "Zuiderbegraafplaats met graf L. Thomson", false);
 
-addMarker(40, 1, 53.22491479087641, 6.5850036959207685, "Het Witte dorp <br/> Nieuwbouw arbeiderswoningen 1925 (Eltjo Rugge)", false);
-addMarker(40, 2, 53.22311557130082, 6.586360320191203, "Het Oranje dorp <br/> Nieuwbouw arbeiderswoningen 1925 (Eltjo Rugge)", false);
+addMarker(40, 1, 53.22491479087641, 6.5850036959207685, "Het Witte dorp", false);
+addMarker(40, 2, 53.22311557130082, 6.586360320191203, "Het Oranje dorp", false);
 addMarker(40, 3, 53.22716929538804, 6.579921704612867, "Locatie voormalig Oosterpark (voetbalstadion)", false);
 addMarker(40, 4, 53.21151262251437, 6.575841917868849, "Locatie voormalig gemeentelijk bad- en waschhuis", false);
-addMarker(40, 5, 53.22941527749215, 6.581187941357561, "Oosterpark, Monument Eltjo Rugge", false);
+addMarker(40, 5, 53.22941527749215, 6.581187941357561, "Oosterpark, Monument Eltjo Rugge", true);
 
 addMarker(41, 1, 53.219148765763386, 6.569340848952082, "'t Feithhuis", false);
 addMarker(41, 2, 53.21508108893028, 6.559754905281157, "Groningsch Museum", false);
@@ -171,6 +171,14 @@ addMarker(52, 1, 53.21665067743388, 6.569968498354901, "Schimmelpenninck Huys", 
 addMarker(52, 2, 53.22371443142726, 6.561404364261742, "Locatie Nieuwe Kazerne", false);
 addMarker(52, 3, 53.217225092097, 6.56034499563685, "Locatie Rooms-Katholieke Kerk", false);
 addMarker(52, 4, 53.145770726176856, 6.575515285935835, "Buitenhuis Lemferdinge", false);
+
+addMarker(53, 1, 53.211324723552565, 6.564075577214216, "Peerd van ome Loeks", false);
+addMarker(53, 2, 53.22276474286194, 6.5663697635666365, "Herberg 'de Oude Stadsschuur'", false);
+addMarker(53, 3, 53.21454625629216, 6.573185639019922, "Lutje Loeks", false);
+addMarker(53, 3, 53.216107181429805, 6.555964187896479, "Café en stalhouderij de Slingerij", false);
+
+
+
 
 
 

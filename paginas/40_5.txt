@@ -1,0 +1,6 @@
+<p>Het Oosterpark is aangelegd tijdens het wethouderschap Volkshuisvesting en Openbare Werken van Eltjo Rugge. Hier is nu een monument te vinden ter ere van zijn wethouderschap.</p>
+
+<figure>
+  <img src="images/40_5_Monument.jpg">
+  <figcaption>Het monument ter ere van Eltjo Rugge in het Oosterpark (2025).</figcaption>
+</figure>
