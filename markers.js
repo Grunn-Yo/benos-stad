@@ -175,7 +175,9 @@ addMarker(52, 4, 53.145770726176856, 6.575515285935835, "Buitenhuis Lemferdinge"
 addMarker(53, 1, 53.211324723552565, 6.564075577214216, "Peerd van ome Loeks", false);
 addMarker(53, 2, 53.22276474286194, 6.5663697635666365, "Herberg 'de Oude Stadsschuur'", false);
 addMarker(53, 3, 53.21454625629216, 6.573185639019922, "Lutje Loeks", false);
-addMarker(53, 3, 53.216107181429805, 6.555964187896479, "Café en stalhouderij de Slingerij", false);
+addMarker(53, 4, 53.216107181429805, 6.555964187896479, "Café en stalhouderij de Slingerij", false);
+
+addMarker(54, 1, 53.21848431689317, 6.570523215918182, "Het Concerthuis", false);
 
 
 
