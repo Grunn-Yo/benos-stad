@@ -77,10 +77,29 @@ const afleveringenData = {
     url: "https://www.youtube.com/watch?v=LzTcQE2AhU8"
   },
 
+  51: {
+    titel: "Belcampo",
+    ondertitel: "Pseudoniem van Herman Pieter Schönfeld Wichers",
+    url: "https://www.youtube.com/watch?v=qI3z80rVr5g"
+  },
+
+
   52: {
     titel: "Dumonceau",
     ondertitel: "Jean Baptiste du Monceau en het Schimmelpenninckhuys",
     url: "https://www.youtube.com/watch?v=n66G061fEgE"
+  },
+
+  53: {
+    titel: "Ome Loeks",
+    ondertitel: "Het volksliedje en het beeld voor het Hoofdstation",
+    url: "https://www.youtube.com/watch?v=ySWq0xL-8Cs"
+  },
+
+  54: {
+    titel: "Etta Palm",
+    ondertitel: "De 18e-eeuwse feministe en het boek van P.F. Thomése",
+    url: "https://www.youtube.com/watch?v=8qdG1HLirvc"
   },
 
   

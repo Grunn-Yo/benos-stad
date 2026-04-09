@@ -1,0 +1,16 @@
+<p>Tekst.</p>
+
+<figure>
+  <img src="images/49_2Avebe.jpg">
+  <figcaption>Caption.</figcaption>
+</figure>
+
+<figure>
+  <a href="URL_website" target="_blank">
+    <img src="URL_foto" alt="">
+  </a>
+  <figcaption>Caption.</figcaption>
+</figure>
+
+https://www.facebook.com/groups/stadgroningenjaren607080/posts/1466849920872658/
+https://www.instagram.com/p/DFp487KtVxl/

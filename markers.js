@@ -167,6 +167,12 @@ addMarker(50, 5, 53.161444839969974, 6.573083413123367, "Paalkoepel", false);
 addMarker(50, 6, 53.16069509761415, 6.571210390954868, "Clubhuis Paterswoldse watersportvereniging", false);
 addMarker(50, 7, 53.202783724662275, 6.544667398700391, "Scholtenmonument", false);
 
+addMarker(51, 1, 53.21648548664521, 6.562376221644886, "Akerk", false);
+addMarker(51, 2, 53.217125028043945, 6.549669440524506, "Woning Jan Wiegers", false);
+addMarker(51, 1, 53.21825836350033, 6.569714152448598, "De Vlaamse Reus", false);
+addMarker(51, 1, 53.21812216343296, 6.572549405108438, "Woning Belcampo", false);
+
+
 addMarker(52, 1, 53.21665067743388, 6.569968498354901, "Schimmelpenninck Huys", false);
 addMarker(52, 2, 53.22371443142726, 6.561404364261742, "Locatie Nieuwe Kazerne", false);
 addMarker(52, 3, 53.217225092097, 6.56034499563685, "Locatie Rooms-Katholieke Kerk", false);
@@ -178,6 +184,7 @@ addMarker(53, 3, 53.21454625629216, 6.573185639019922, "Lutje Loeks", false);
 addMarker(53, 4, 53.216107181429805, 6.555964187896479, "Café en stalhouderij de Slingerij", false);
 
 addMarker(54, 1, 53.21848431689317, 6.570523215918182, "Het Concerthuis", false);
+
 
 
 
