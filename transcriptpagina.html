@@ -37,16 +37,11 @@
 
           container.innerHTML = `
             <h1>
-              Transcript aflevering ${nr}
+              Transcript Beno's Stad aflevering ${nr}
               ${data ? `- ${data.titel}` : ""}
             </h1>
 
             <div class="page-content">
-              ${html}
-            </div>
-
-            <div class="bottom-bar">
-              <hr>
 
               ${data ? `
                 <p>
@@ -55,6 +50,8 @@
                     Beno's Stad ${nr}: ${data.titel}</a>.
                 </p>
               ` : ""}
+	      <hr>
+              ${html}
             </div>
           `;
         })
