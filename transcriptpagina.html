@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transcript</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div id="content"></div>
+  </main>
+
+  <script src="paginaData.js"></script>
+
+  <script>
+    // URL-parameter uitlezen
+    const params = new URLSearchParams(window.location.search);
+    const nr = params.get("nr");
+
+    const container = document.getElementById("content");
+
+    if (nr) {
+      const data = afleveringenData[nr];
+
+      // Pad naar transcriptbestand
+      const filePath = `transcripts/${nr}_transcript.txt`;
+
+      fetch(filePath)
+        .then(response => {
+          if (!response.ok) throw new Error("Transcript niet gevonden");
+          return response.text();
+        })
+        .then(html => {
+
+          container.innerHTML = `
+            <h1>
+              Transcript aflevering ${nr}
+              ${data ? `- ${data.titel}` : ""}
+            </h1>
+
+            <div class="page-content">
+              ${html}
+            </div>
+
+            <div class="bottom-bar">
+              <hr>
+
+              ${data ? `
+                <p>
+                  Bekijk de aflevering:
+                  <a href="${data.url}" target="_blank">
+                    Beno's Stad ${nr}: ${data.titel}
+                  </a>
+                </p>
+              ` : ""}
+            </div>
+          `;
+        })
+        .catch(err => {
+          container.innerHTML = `
+            <p>Geen transcript gevonden voor aflevering ${nr}.</p>
+          `;
+          console.error(err);
+        });
+
+    } else {
+      container.innerHTML = `
+        <p>Geen aflevering opgegeven.</p>
+      `;
+    }
+  </script>
+</body>
+</html>

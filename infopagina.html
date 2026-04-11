@@ -26,28 +26,36 @@
     const container = document.getElementById("content");
 
     if (id) {
-  // Pad naar het tekstbestand per pagina
-  const filePath = `paginas/${afl[0]}_${id}.txt`;
+    // Pad naar het tekstbestand per pagina
+      const filePath = `paginas/${afl[0]}_${id}.txt`;
+      const transcriptPath = `transcripts/${nr}_transcript.txt`;
 
-  fetch(filePath)
-    .then(response => {
-      if (!response.ok) throw new Error("Pagina niet gevonden");
-      return response.text();
-    })
-    .then(html => {
-
-    //  Links genereren voor alle afleveringen
-        const linksHTML = afl.map(nr => {
-          const data = afleveringenData[nr];
-          if (!data) return "";
-
-          return `
+      fetch(filePath)
+        .then(response => {
+        if (!response.ok) throw new Error("Pagina niet gevonden");
+          return response.text();
+        })
+        .then(html => {
+        //  Links genereren voor alle afleveringen
+          const linksHTML = afl.map(nr => {
+            const data = afleveringenData[nr];
+            if (!data) return "";
+            return `
             <p>
-              Zie <a href="${data.url}" target="_blank">
-                Beno's Stad ${nr}: ${data.titel}</a>.
-            </p>
-          `;
-        }).join("");
+              Zie <a href="${data.url}" target="_blank">Beno's Stad ${nr}: ${data.titel}</a>.
+
+       	      fetch(transcriptPath)
+                .then(res => {
+                  if (res.ok) {
+                    return `
+                    Klik <a href="transcriptpagina.html?nr=${nr}">hier</a> voor een transcript van de aflevering.
+                    `;
+                  }
+                  return "";
+                });
+             </p>
+             `;
+          }).join("");
 
       container.innerHTML = `
         ${title ? `<h1>${title}</h1>` : ""}
