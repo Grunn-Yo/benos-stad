@@ -185,6 +185,12 @@ addMarker(53, 4, 53.216107181429805, 6.555964187896479, "Café en stalhouderij d
 
 addMarker(54, 1, 53.21848431689317, 6.570523215918182, "Het Concerthuis", false);
 
+addMarker(55, 1, 53.21939604206889, 6.568201779907637, "De Martinitoren", false);
+
+addMarker(56, 1, 53.21890541670627, 6.565740328078608, "Woning Carl Rabenhaupt", false);
+addMarker(56, 2, 53.21951227246723, 6.561864482647909, "Kogel 1672", false);
+addMarker(56, 3, 53.221693672536425, 6.5609450584121705, "Huis Carl Rabenhaupt", false);
+addMarker(56, 4, 53.20892077025126, 6.56786901061001, "Rabenhaupt Monument", false);
 
 
 
