@@ -1,0 +1,8 @@
+<p>Hier stond rond 1927-1931 een politieposthuisje.</p>
+
+<figure>
+  <a href="https://www.beeldbankgroningen.nl/beelden/detail/c944bc64-be1f-1d91-0fc3-aba5f29f7f36/media/06631ffa-276a-5d3d-d24d-c5a2410b0a4e" target="_blank">
+    <img src="images/22_10_posthuisje.jpg" alt="">
+  </a>
+  <figcaption>Politieposthuisje 1927-1931 (Foto P.B. Kramer, Groninger Archieven)</figcaption>
+</figure>

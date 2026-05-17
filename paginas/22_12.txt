@@ -1,0 +1,11 @@
+<p>Hier stond een politieposthuisje aan de Friesestraatweg.</p>
+
+<figure>
+  <a href="https://www.beeldbankgroningen.nl/beelden/detail/3eabca0c-78b1-76d6-65f6-37b60e1d30d5/media/684775d5-5ec3-39e2-2bc3-b6ac2f4db5be" target="_blank">
+    <img src="images/22_12(1).jpg" alt="">
+  </a>
+  <figcaption>Politiepost Friesestraatweg oostzijde (Foto Groninger Archieven)</figcaption>
+</figure>
+
+Zie <a href="https://www.beeldbankgroningen.nl/beelden/detail/ed6e15c5-158f-b147-1abd-11cbe941d7ec/media/1af50df6-9cba-9894-6eec-0ec6b5ac6ebe?mode=detail&view=horizontal&q=politiepost&rows=1&page=15" target="_blank">hier</a> een foto met meer omgevingsbeeld.
+

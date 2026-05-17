@@ -70,15 +70,20 @@ addMarker(20, 3, 53.208595, 6.59624, "Voormalige tippelzone Bornholmstraat", fal
 
 addMarker(21, 1, 53.216737, 6.5634036, "Korenbeurs", true);
 
-addMarker(22, 1, 53.218549697934435, 6.566947064061545, "Voormalige locatie politiebureau <br/> tot 1905", false);
-addMarker(22, 2, 53.21146893647456, 6.573840548845822, "Voormalig hulpbureau politie <br/> 1875-1966", false);
-addMarker(22, 3, 53.21976869977467, 6.5679878122798465, "Voormalige locatie politiebureau <br/> 1905-1971", false);
-addMarker(22, 4, 53.22646135161808, 6.556568326727859, "Voormalig hulpbureau politie <br/> 1903-1963", false);
+addMarker(22, 1, 53.218549697934435, 6.566947064061545, "Stadhuis", false);
+addMarker(22, 2, 53.21146893647456, 6.573840548845822, "Voormalig hulpbureau politie", false);
+addMarker(22, 3, 53.21976869977467, 6.5679878122798465, "Voormalige locatie hoofdbureau politie", false);
+addMarker(22, 4, 53.22646135161808, 6.556568326727859, "Voormalig hulpbureau politie", false);
 addMarker(22, 5, 53.21602821630878, 6.5556535327048495, "Voormalig hulpbureau politie <br/> 1920s-1963", false);
 addMarker(22, 6, 53.21388931414113, 6.565461836180347, "Voormalig hulpbureau politie <br/> 1928-1951", false);
 addMarker(22, 7, 53.19829866109128, 6.579628248208602, "Voormalig hulpbureau politie <br/> 1928(?)-1966", false);
 addMarker(22, 8, 53.22199733110715, 6.584171679725236, "Voormalig hulpbureau politie <br/> 1931(?)-1966", false);
 addMarker(22, 9, 53.2154808046047, 6.572413694180369, "Politiebureau <br/> sinds 1972", false);
+addMarker(22, 10, 53.20905039291125, 6.580947001510179, "Voormalige locatie Politiepost", false);
+addMarker(22, 11, 53.22980683375513, 6.56749332247591, "Voormalige locatie Politiepost", false);
+addMarker(22, 12, 53.224091018575244, 6.536552639455759, "Voormalige locatie Politiepost", false);
+
+
 
 addMarker(23, 1, 53.1255133286087, 6.581842023081133, "Vliegveld Eelde", false);
 
@@ -169,8 +174,8 @@ addMarker(50, 7, 53.202783724662275, 6.544667398700391, "Scholtenmonument", fals
 
 addMarker(51, 1, 53.21648548664521, 6.562376221644886, "Akerk", false);
 addMarker(51, 2, 53.217125028043945, 6.549669440524506, "Woning Jan Wiegers", false);
-addMarker(51, 1, 53.21825836350033, 6.569714152448598, "De Vlaamse Reus", false);
-addMarker(51, 1, 53.21812216343296, 6.572549405108438, "Woning Belcampo", false);
+addMarker(51, 3, 53.21825836350033, 6.569714152448598, "De Vlaamse Reus", false);
+addMarker(51, 4, 53.21812216343296, 6.572549405108438, "Woning Belcampo", false);
 
 
 addMarker(52, 1, 53.21665067743388, 6.569968498354901, "Schimmelpenninck Huys", false);

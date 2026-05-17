@@ -1,0 +1,16 @@
+<p>Hier aan de A-weg werd in de jaren '20 een hulpbureau van de politie geopend.</p>
+
+<figure>
+  <img src="images/49_2Avebe.jpg">
+  <figcaption>Caption.</figcaption>
+</figure>
+
+<figure>
+  <a href="https://www.beeldbankgroningen.nl/beelden/detail/56f50d83-52cb-3567-f4ad-aebc96106580/media/225421d3-e256-ec50-efed-a142dbf90f28" target="_blank">
+    <img src="images/22_5_1925-35.jpg" alt="">
+  </a>
+  <figcaption>Het hulpbureau 1925-1935 (Foto P.B. Kramer, Groninger Archieven).</figcaption>
+</figure>
+
+Zie <a href="https://www.beeldbankgroningen.nl/beelden/detail/309e5265-2d3c-98f7-da0b-e21ae6f6069a/media/fdcd4741-6b3c-06f1-3e78-4265ca0cdbd2" target="_blank">hier</a> een foto uit 1960.
+
