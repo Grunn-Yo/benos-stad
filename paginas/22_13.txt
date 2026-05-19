@@ -1,0 +1,8 @@
+<p>Hier stond een politieposthuisje aan het Damsterdiep.</p>
+
+<figure>
+  <a href="https://www.beeldbankgroningen.nl/beelden/detail/80b14e91-d67e-0b6d-2593-0a04fca3b1d4/media/9f633968-7bb6-aead-12a3-f9fb98534bc4" target="_blank">
+    <img src="images/22_13.jpg" alt="">
+  </a>
+  <figcaption>Politiepost Damsterdiep in 1929 (Collectie Groninger Archieven)</figcaption>
+</figure>

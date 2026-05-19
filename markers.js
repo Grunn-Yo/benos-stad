@@ -72,16 +72,18 @@ addMarker(21, 1, 53.216737, 6.5634036, "Korenbeurs", true);
 
 addMarker(22, 1, 53.218549697934435, 6.566947064061545, "Stadhuis", false);
 addMarker(22, 2, 53.21146893647456, 6.573840548845822, "Voormalig hulpbureau politie", false);
-addMarker(22, 3, 53.21976869977467, 6.5679878122798465, "Voormalige locatie hoofdbureau politie", false);
+addMarker(22, 3, 53.21976869977467, 6.5679878122798465, "Voormalige locatie hoofdbureau politie", true);
 addMarker(22, 4, 53.22646135161808, 6.556568326727859, "Voormalig hulpbureau politie", false);
-addMarker(22, 5, 53.21602821630878, 6.5556535327048495, "Voormalig hulpbureau politie <br/> 1920s-1963", false);
-addMarker(22, 6, 53.21388931414113, 6.565461836180347, "Voormalig hulpbureau politie <br/> 1928-1951", false);
-addMarker(22, 7, 53.19829866109128, 6.579628248208602, "Voormalig hulpbureau politie <br/> 1928(?)-1966", false);
-addMarker(22, 8, 53.22199733110715, 6.584171679725236, "Voormalig hulpbureau politie <br/> 1931(?)-1966", false);
-addMarker(22, 9, 53.2154808046047, 6.572413694180369, "Politiebureau <br/> sinds 1972", false);
-addMarker(22, 10, 53.20905039291125, 6.580947001510179, "Voormalige locatie Politiepost", false);
-addMarker(22, 11, 53.22980683375513, 6.56749332247591, "Voormalige locatie Politiepost", false);
-addMarker(22, 12, 53.224091018575244, 6.536552639455759, "Voormalige locatie Politiepost", false);
+addMarker(22, 5, 53.21602821630878, 6.5556535327048495, "Voormalig hulpbureau politie", false);
+addMarker(22, 6, 53.21388931414113, 6.565461836180347, "Voormalig hulpbureau politie", false);
+addMarker(22, 7, 53.19829866109128, 6.579628248208602, "Voormalig hulpbureau politie", false);
+addMarker(22, 8, 53.22199733110715, 6.584171679725236, "Voormalig politiebureau", false);
+addMarker(22, 9, 53.2154808046047, 6.572413694180369, "Politiebureau", false);
+addMarker(22, 10, 53.20905039291125, 6.580947001510179, "Voormalige locatie Politiepost", true);
+addMarker(22, 11, 53.22980683375513, 6.56749332247591, "Voormalige locatie Politiepost", true);
+addMarker(22, 12, 53.224091018575244, 6.536552639455759, "Voormalige locatie Politiepost", true);
+addMarker(22, 13, 53.21813198642218, 6.57717320201012, "Voormalige locatie Politiepost", true);
+
 
 
 

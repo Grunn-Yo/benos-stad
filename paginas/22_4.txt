@@ -1,1 +1,8 @@
 <p>In 1903 werd hier aan de Moesstraat een tweede hulpbureau voor de politie geopend. In 1963 werd het weer gesloten.</p>
+
+<figure>
+  <a href="https://www.beeldbankgroningen.nl/beelden/detail/196eea70-2b6f-afe1-db08-4d8c77e34d97/media/40d5e600-c175-b874-b73f-a07068fe69ca" target="_blank">
+    <img src="images/22_4(1).jpg" alt="">
+  </a>
+  <figcaption>Het nieuwe hulpbureau in 1931-1933 (Foto P.B. Kramer, Groninger Archieven).</figcaption>
+</figure>

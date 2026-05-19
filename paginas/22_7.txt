@@ -1,13 +1,8 @@
-<p>Tekst.</p>
+<p>Hier aan de Verlengde Hereweg werd rond 1928 een hulpbureau voor de politie geopend. In 1966 werd het weer gesloten.</p>
 
 <figure>
-  <img src="images/49_2Avebe.jpg">
-  <figcaption>Caption.</figcaption>
-</figure>
-
-<figure>
-  <a href="URL_website" target="_blank">
-    <img src="URL_foto" alt="">
+  <a href="https://www.beeldbankgroningen.nl/beelden/detail/891f3988-da9c-e88a-e3e0-399746bc61e3/media/8d925933-c3ce-8091-6cf4-ef5836b0d408" target="_blank">
+    <img src="images/22_7.jpg" alt="">
   </a>
-  <figcaption>Caption.</figcaption>
+  <figcaption>Het hulpbureau in 1930-1939 (Foto P.B. Kramer, Collectie Groninger Archieven)</figcaption>
 </figure>

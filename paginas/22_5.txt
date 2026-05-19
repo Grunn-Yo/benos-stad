@@ -1,9 +1,4 @@
-<p>Hier aan de A-weg werd in de jaren '20 een hulpbureau van de politie geopend.</p>
-
-<figure>
-  <img src="images/49_2Avebe.jpg">
-  <figcaption>Caption.</figcaption>
-</figure>
+<p>Hier aan de Aweg werd in de jaren '20 een hulpbureau van de politie geopend. In 1963 werd het weer gesloten.</p>
 
 <figure>
   <a href="https://www.beeldbankgroningen.nl/beelden/detail/56f50d83-52cb-3567-f4ad-aebc96106580/media/225421d3-e256-ec50-efed-a142dbf90f28" target="_blank">

@@ -1,13 +1,10 @@
-<p>Tekst.</p>
+<p>Aan de Ubbo Emmiusstraat werd in 1928 een hulpbureau voor de politie geopend. In 1951 werd het weer gesloten.</p>
 
 <figure>
-  <img src="images/49_2Avebe.jpg">
-  <figcaption>Caption.</figcaption>
-</figure>
-
-<figure>
-  <a href="URL_website" target="_blank">
-    <img src="URL_foto" alt="">
+  <a href="https://www.beeldbankgroningen.nl/beelden/detail/5636795e-7e57-e75d-c140-4c0ab5f3746c/media/4f2b01d9-ee50-388c-f252-398ababbbbf7" target="_blank">
+    <img src="images/22_6.jpg" alt="">
   </a>
-  <figcaption>Caption.</figcaption>
+  <figcaption>Gevelsteen 1928 (Collectie Groninger Archieven)</figcaption>
 </figure>
+
+Zie <a href="https://www.beeldbankgroningen.nl/beelden/detail/8ffc7839-4693-f6fb-0aaa-843482181ac4/media/4d6ab5e3-9b01-8493-d65d-5846959d78ae" target="_blank">hier</a> een foto van het gebouw in 1928.
