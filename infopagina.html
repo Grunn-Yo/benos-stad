@@ -35,62 +35,67 @@
           return response.text();
         })
         .then(html => {
-  // Links genereren voor alle afleveringen
+        // Links genereren voor alle afleveringen
         const linkPromises = afl.map(nr => {
           const data = afleveringenData[nr];
           if (!data) return Promise.resolve("");
 
-          // Controleer of het transcript bestaat
           const transcriptPath = `transcript/aflevering${nr}.txt`;
 
-          return fetch(transcriptPath)
+          return fetch(transcriptPath, { method: "HEAD" })
             .then(response => {
-              let transcriptLink = "";
-
-              if (response.ok) {
-                transcriptLink = `
-                  <br>
-                  Zie <a href="transcriptpagina.html?nr=${nr}">
-                    hier
-                  </a> het transcript van aflevering ${nr}.
-                `;
-              }
+              const transcriptLink = response.ok
+                ? `
+      <br>
+      Zie <a href="transcriptpagina.html?nr=${nr}">
+        hier
+      </a> het transcript van aflevering ${nr}.
+    `
+                : "";
 
               return `
-                <p>
-                  Zie <a href="${data.url}" target="_blank">
-                    Beno's Stad ${nr}: ${data.titel}</a>.
-                  ${transcriptLink}
-                </p>
-              `;
+    <p>
+      Zie <a href="${data.url}" target="_blank">
+        Beno's Stad ${nr}: ${data.titel}</a>.
+      ${transcriptLink}
+    </p>
+  `;
             })
             .catch(() => {
-              // Geen transcriptbestand: alleen de gewone afleveringlink tonen
+              // Als het transcript niet bestaat, alleen de aflevering tonen.
               return `
-                <p>
-                  Zie <a href="${data.url}" target="_blank">
-                    Beno's Stad ${nr}: ${data.titel}</a>.
-                </p>
-              `;
+    <p>
+      Zie <a href="${data.url}" target="_blank">
+        Beno's Stad ${nr}: ${data.titel}</a>.
+    </p>
+  `;
             });
         });
 
         Promise.all(linkPromises).then(results => {
           const linksHTML = results.join("");
 
-          container.innerHTML = `
-            ${title ? `<h1>${title}</h1>` : ""}
+      container.innerHTML = `
+        ${title ? `<h1>${title}</h1>` : ""}
 
-            <div class="page-content">
-              ${html}
-            </div>
+        <div class="page-content">
+          ${html}
+        </div>
 
-            <div class="bottom-bar">
-              <hr>
-              ${linksHTML}
-            </div>
-          `;
+        <div class="bottom-bar">
+            <hr>
+            ${linksHTML}
+          </div>
+        `;
         });
+      })
+    .catch(err => {
+      container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
+      console.error(err);
+    });
+    } else {
+      container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
+    }
   </script>
 </body>
 </html>
