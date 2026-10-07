@@ -22,3 +22,8 @@ Meer informatie: <a href="https://stadsmonumenten.nl/HetConcerthuis.html" target
   </a>
   <figcaption>Bioscoop "Images" in november 2005 (Foto: Wolter Kobus Fotografie).</figcaption>
 </figure>
+
+<figure>
+    <img src="images/54_1_Concerthuis.jpg" alt="Concerthuis 2026">
+  <figcaption>Het Concerthuis in 2026.</figcaption>
+</figure>
