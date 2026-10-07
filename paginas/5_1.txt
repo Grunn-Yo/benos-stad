@@ -8,11 +8,11 @@
 </figure>
 
 <figure>
-  <img src="images/5_1_Melkinrichting (1).jpg" alt="Zuivelfabriek">
+  <img src="images/5_1_Melkinrichting(1).jpg" alt="Zuivelfabriek">
   <figcaption>Aanzicht Noorderhaven (2026).</figcaption>
 </figure>
 
 <figure>
-  <img src="images/5_1_Melkinrichting (2).jpg" alt="Melkinrichting">
+  <img src="images/5_1_Melkinrichting(2).jpg" alt="Melkinrichting">
   <figcaption>Detail zijgevel (2026).</figcaption>
 </figure>
