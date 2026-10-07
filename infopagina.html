@@ -40,6 +40,28 @@ const linksHTML = afl.map(nr => {
   const data = afleveringenData[nr];
   if (!data) return "";
 
+   // Controleren of het transcriptbestand bestaat
+          const transcriptPath = `transcript/aflevering${nr}.txt`;
+
+          let transcriptHTML = "";
+
+          try {
+            const response = await fetch(transcriptPath, {
+              method: "HEAD"
+            });
+
+            if (response.ok) {
+              transcriptHTML = `
+                <br>
+                Zie <a href="transcriptpagina.html?nr=${nr}">
+                  hier
+                </a> het transcript van aflevering ${nr}.
+              `;
+            }
+          } catch (err) {
+            // Transcript bestaat niet, dus niets toevoegen
+          }
+
   return `
     <p>
       Zie <a href="${data.url}" target="_blank">
