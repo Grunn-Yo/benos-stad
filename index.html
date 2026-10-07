@@ -60,43 +60,80 @@
       shadowSize: [41, 41]
     });
 
+    var redIcon = new L.Icon({
+      iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+      shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
+
     var markers = [];
 
-    function addMarker(afleveringen, id, lat, lng, extraText, isAf) {
-      // Zorg dat afleveringen altijd een array is
-      if (!Array.isArray(afleveringen)) afleveringen = [afleveringen];
+function addMarker(afleveringen, id, lat, lng, extraText, isAf) {
+  // Zorg dat afleveringen altijd een array is
+  if (!Array.isArray(afleveringen)) afleveringen = [afleveringen];
 
-      var tooltipText = "Beno's Stad " + afleveringen.join(", ");
-      if (extraText) tooltipText += " <br/> " + extraText;
+  var tooltipText = "Beno's Stad " + afleveringen.join(", ");
+  if (extraText) tooltipText += " <br/> " + extraText;
 
-      var iconToUse = isAf ? purpleIcon : blueIcon;
-      var marker = L.marker([lat, lng], {
-        icon: iconToUse
-      }).addTo(map);
-      marker.bindTooltip(tooltipText, { permanent: false });
+  // Pad naar de infopagina
+  // Bijvoorbeeld: paginas/1_2.txt
+  const pagePath = `paginas/${afleveringen[0]}_${id}.txt`;
 
-      marker.isAf = isAf; // true of false
+  // Functie om de marker daadwerkelijk aan te maken
+  function createMarker(iconToUse) {
+    var marker = L.marker([lat, lng], {
+      icon: iconToUse
+    }).addTo(map);
 
-      // Koppel alle afleveringen aan deze marker
-      marker.afleveringen = afleveringen;
+    marker.bindTooltip(tooltipText, { permanent: false });
 
-      
-      //Verander afleveringen in een string voor de URL 
-      let afleveringenJSON = JSON.stringify(afleveringen);
-      let afleveringenParam = encodeURIComponent(afleveringenJSON);
+    marker.isAf = isAf;
 
-      marker.on('click', function() {
-        window.open(
-          'infopagina.html?afl=' + afleveringenParam + '&id=' + id + "&title=" + encodeURIComponent(extraText),
-          '_blank'
-        );
-      });
+    // Koppel alle afleveringen aan deze marker
+    marker.afleveringen = afleveringen;
 
+    // Verander afleveringen in een string voor de URL
+    let afleveringenJSON = JSON.stringify(afleveringen);
+    let afleveringenParam = encodeURIComponent(afleveringenJSON);
 
+    marker.on('click', function() {
+      window.open(
+        'infopagina.html?afl=' + afleveringenParam +
+        '&id=' + id +
+        "&title=" + encodeURIComponent(extraText),
+        '_blank'
+      );
+    });
 
-      markers.push(marker);
-    }
-    
+    markers.push(marker);
+  }
+
+  // TRUE = altijd paars
+  if (isAf === true) {
+    createMarker(purpleIcon);
+    return;
+  }
+
+  // FALSE = controleren of de infopagina bestaat
+  fetch(pagePath, { method: "HEAD" })
+    .then(response => {
+      if (response.ok) {
+        // Pagina bestaat → blauw
+        createMarker(blueIcon);
+      } else {
+        // Pagina bestaat niet → rood
+        createMarker(redIcon);
+      }
+    })
+    .catch(() => {
+      // Bij een fout gaan we ervan uit dat de pagina niet bestaat
+      createMarker(redIcon);
+    });
+}
+
     </script>
 
     <script src="markers.js"></script>
