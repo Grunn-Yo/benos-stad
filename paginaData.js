@@ -8,7 +8,8 @@ const afleveringenData = {
   2: {
     titel: "Jacques Wallage",
     ondertitel: "Burgemeester van Groningen",
-    url: "https://www.youtube.com/watch?v=56Cz5rjDwwI"
+    url: "https://www.youtube.com/watch?v=56Cz5rjDwwI",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/jacques-wallage-benos-stad-aflevering-2-30-9-1998/"
   },
 
   3: {

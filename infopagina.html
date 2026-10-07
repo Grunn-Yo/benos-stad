@@ -42,59 +42,117 @@
 
           const transcriptPath = `transcript/aflevering${nr}.txt`;
 
-          return fetch(transcriptPath, { method: "HEAD" })
-            .then(response => {
-              const transcriptLink = response.ok
-                ? `
-      <br>
-      Zie <a href="transcriptpagina.html?nr=${nr}">
-        hier
-      </a> het transcript van aflevering ${nr}.
-    `
-                : "";
-
-              return `
-    <p>
-      Zie <a href="${data.url}" target="_blank">
-        Beno's Stad ${nr}: ${data.titel}</a>.
-      ${transcriptLink}
-    </p>
-  `;
+          return fetch(transcriptPath, {
+              method: "HEAD"
             })
-            .catch(() => {
-              // Als het transcript niet bestaat, alleen de aflevering tonen.
+
+            .then(response => {
+
+              let transcriptHTML = "";
+
+              // 1. Lokaal transcript bestaat
+              if (response.ok) {
+
+                transcriptHTML = `
+                  <br>
+                  Zie <a href="transcriptpagina.html?nr=${nr}">
+                    hier
+                  </a> het transcript van aflevering ${nr}.
+                `;
+
+              }
+
+              // 2. Geen lokaal transcript,
+              //    maar wel een externe transcripturl
+              else if (data.transcripturl) {
+
+                transcriptHTML = `
+                  <br>
+                  Zie <a href="${data.transcripturl}" target="_blank">
+                    hier
+                  </a> het transcript van aflevering ${nr}.
+                `;
+
+              }
+
+              // 3. Geen transcript → geen tekst tonen
               return `
-    <p>
-      Zie <a href="${data.url}" target="_blank">
-        Beno's Stad ${nr}: ${data.titel}</a>.
-    </p>
-  `;
+                <p>
+                  Zie <a href="${data.url}" target="_blank">
+                    Beno's Stad ${nr}: ${data.titel}
+                  </a>.
+                  ${transcriptHTML}
+                </p>
+              `;
+            })
+
+            .catch(() => {
+
+              // Het lokale transcript kon niet worden gevonden.
+              // Kijk daarom of er een externe transcripturl is.
+
+              let transcriptHTML = "";
+
+              if (data.transcripturl) {
+
+                transcriptHTML = `
+                  <br>
+                  Zie <a href="${data.transcripturl}" target="_blank">
+                    hier
+                  </a> het transcript van aflevering ${nr}.
+                `;
+
+              }
+
+              return `
+                <p>
+                  Zie <a href="${data.url}" target="_blank">
+                    Beno's Stad ${nr}: ${data.titel}
+                  </a>.
+                  ${transcriptHTML}
+                </p>
+              `;
             });
+          });
+
+
+          // Wacht tot alle transcriptcontroles klaar zijn
+          Promise.all(linkPromises)
+            .then(results => {
+
+              const linksHTML = results.join("");
+
+              container.innerHTML = `
+                ${title ? `<h1>${title}</h1>` : ""}
+
+                <div class="page-content">
+                  ${html}
+                </div>
+
+                <div class="bottom-bar">
+                  <hr>
+                  ${linksHTML}
+                </div>
+              `;
+
+            });
+
+        })
+
+        .catch(err => {
+
+          container.innerHTML =
+            `<p>Geen informatie gevonden voor dit item.</p>`;
+
+          console.error(err);
+
         });
 
-        Promise.all(linkPromises).then(results => {
-          const linksHTML = results.join("");
-
-      container.innerHTML = `
-        ${title ? `<h1>${title}</h1>` : ""}
-
-        <div class="page-content">
-          ${html}
-        </div>
-
-        <div class="bottom-bar">
-            <hr>
-            ${linksHTML}
-          </div>
-        `;
-        });
-      })
-    .catch(err => {
-      container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
-      console.error(err);
-    });
     } else {
-      container.innerHTML = `<p>Geen informatie gevonden voor dit item.</p>`;
+
+      container.innerHTML =
+        `<p>Geen informatie gevonden voor dit item.</p>`;
+
     }
   </script>
 </body>
