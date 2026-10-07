@@ -190,7 +190,7 @@ addMarker(53, 2, 53.22276474286194, 6.5663697635666365, "Herberg 'de Oude Stadss
 addMarker(53, 3, 53.21454625629216, 6.573185639019922, "Lutje Loeks", false);
 addMarker(53, 4, 53.216107181429805, 6.555964187896479, "Café en stalhouderij de Slingerij", false);
 
-addMarker(54, 1, 53.21848431689317, 6.570523215918182, "Het Concerthuis", false);
+addMarker(54, 1, 53.21848431689317, 6.570523215918182, "Het Concerthuis", true);
 
 addMarker(55, 1, 53.21939604206889, 6.568201779907637, "De Martinitoren", false);
 
