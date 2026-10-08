@@ -15,19 +15,65 @@ const afleveringenData = {
   3: {
     titel: "De Ossenmarkt",
     ondertitel: "De bouw van een parkeergarage",
-    url: "https://www.youtube.com/watch?v=S8G33Vkq1cc"
+    url: "https://www.youtube.com/watch?v=S8G33Vkq1cc",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/de-ossenmarkt-benos-stad-aflevering-3-8-10-1998/"
   },
 
   4: {
     titel: "Het Kasteel / Noorderpoortcollege",
     ondertitel: "Een nieuw schoolgebouw",
-    url: "https://www.youtube.com/watch?v=dbhCEHQksvw"
+    url: "https://www.youtube.com/watch?v=dbhCEHQksvw",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/het-kasteel-noorderpoortcollege-benos-stad-aflevering-4-15-10-1998/"
   },
 
   5: {
     titel: "De Ommelanden",
     ondertitel: "De laatste Groningse melkfabriek",
-    url: "https://www.youtube.com/watch?v=bXWS2KSVh44"
+    url: "https://www.youtube.com/watch?v=bXWS2KSVh44",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/de-ommelanden-de-laatste-groningse-melkfabriek-beno-stad-aflevering-5-22-10-1998/"
+  },
+
+  6: {
+    titel: "Praediniussingel",
+    ondertitel: "Diakonessenhuis en Huize Tavenier",
+    url: "https://www.youtube.com/watch?v=uID4UdlIS4I",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/praediniussingel-diakonessenhuis-en-huize-tavenier-benos-stad-6-29-10-1998/"
+  },
+
+  7: {
+    titel: "Academie Minerva",
+    ondertitel: "200-jarig bestaan en Jozef Israëls",
+    url: "https://www.youtube.com/watch?v=vF8W3NgqF-E",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/academie-minerva-200-jarig-bestaan-en-jozef-israels-benos-stad-7-5-11-1998/"
+  },
+
+  8: {
+    titel: "Suiker",
+    ondertitel: "De suikerfabrieken van Groningen",
+    url: "https://www.youtube.com/watch?v=Ev2qU7Z9XWE",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/suiker-de-suikerfabrieken-van-groningen-benos-stad-8-12-11-1998/"
+  },
+
+  9: {
+    titel: "De Hunzecentrale",
+    ondertitel: "Van Bloemstraat tot de val van de vijf pijpen",
+    url: "https://www.youtube.com/watch?v=Fk9khgFfnY4",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/academie-minerva-200-jarig-bestaan-en-jozef-israels-benos-stad-7-5-11-1998/"
+  },
+
+  10: {
+    titel: "De Helperlinie",
+    ondertitel: "Van Mesdagkliniek, Engelse Kamp en Rabenhauptkazerne",
+    url: "https://www.youtube.com/watch?v=C-8nn9UjKRg",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/de-helperlinie-van-mesdagkliniek-engelse-kamp-en-rabenhauptkazerne-benos-stad-10-26-11-1998/"
+  },
+
+
+  16: {
+    titel: "Grote Markt Noordzijde",
+    ondertitel: "Vindicat, kozakken en Granpré Molière",
+    url: "https://www.youtube.com/watch?v=tYCNl0Z1Gjc",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/grote-markt-noordzijde-vindicat-kozakken-en-granpre-moliere-benos-stad-16-6-1-1999/"
   },
 
   21: {
