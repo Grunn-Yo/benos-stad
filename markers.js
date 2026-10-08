@@ -1,6 +1,6 @@
 // lijst met markers
 addMarker(1, 1, 53.20526118458414, 6.5783154350018345, "Voormalig 'Kempkensberg'", false);
-addMarker(1, 2, 53.21844, 6.56627, "Borstbeeld Carl von Rabenhaupt", true);
+addMarker([1, 56], 2, 53.21844, 6.56627, "Borstbeeld Carl von Rabenhaupt", true);
 addMarker(1, 3, 53.21829, 6.56816, "Café De Groote Griet", false);
 addMarker(1, 4, 53.2157232, 6.5699404, "Café 1672", false);
 addMarker(1, 5, 53.21440708470478, 6.570729933064676, "Voormalige Locatie Kempkensberg", true);

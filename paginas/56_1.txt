@@ -1,0 +1,8 @@
+<p>Op deze plek aan de noordzijde van de Grote Markt stond het "huis met de schone gevel", waar Carl Rabenhaupt gewoond heeft. In april 1945 is het in vlammen opgegaan.</p>
+
+<figure>
+  <a href="https://groningermuseum.nl/collectie/collectie-items/8476" target="_blank">
+    <img src="images/56_1_Schilderij.jpg" alt="Waaggebouw">
+  </a>
+  <figcaption>Op dit schilderij van het Waaggebouw is aan de rechterkant het 'huis met de schone gevel' te zien (Albert Jurardus van Prooijen, 1861).</figcaption>
+</figure>

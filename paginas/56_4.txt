@@ -1,0 +1,10 @@
+<p>Dit kunstwerk van Ron Caspers hangt sinds 2001 aan de Rabenhauptstraat. Het is een plaquette ter herinnering aan het jaar 1672, en bevat de tekst 'Groningen constant, behoudt van 't landt". </p>
+
+<figure>
+  <a href="https://nl.wikipedia.org/wiki/Ron_Caspers#/media/Bestand:Ron_Caspers_-_Rabenhauptplaque.jpg" target="_blank">
+    <img src="images/56_4.jpg" alt="Plaque 1672">
+  </a>
+  <figcaption>Plaque ter herdenking van Groningens Ontzet van Ron Caspers, 2001 (Door <a href="//commons.wikimedia.org/wiki/User:ZanderZ" class="mw-redirect" title="User:ZanderZ">ZanderZ</a> - <span class="int-own-work" lang="nl">Eigen werk</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=16274305">Koppeling</a>). </figcaption>
+</figure>
+
+
