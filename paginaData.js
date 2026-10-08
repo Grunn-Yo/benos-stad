@@ -68,6 +68,27 @@ const afleveringenData = {
     transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/de-helperlinie-van-mesdagkliniek-engelse-kamp-en-rabenhauptkazerne-benos-stad-10-26-11-1998/"
   },
 
+  11: {
+    titel: "Vluchtelingen",
+    ondertitel: "Opvang is van alle tijden",
+    url: "https://www.youtube.com/watch?v=PxADKkMT8BU",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/vluchtelingen-opvang-is-van-alle-tijden/"
+  },
+
+  12: {
+    titel: "Noorderbad",
+    ondertitel: "Van zwembad naar openbare bibliotheek",
+    url: "https://www.youtube.com/watch?v=Zi5MKOWCO5M",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/noorderbad-van-zwembad-naar-openbare-bibliotheek/"
+  },
+
+  13: {
+    titel: "Omgeving Zuiderdiep-Rademarkt",
+    ondertitel: "WEEVA en Nieuwsblad van het Noorden",
+    url: "https://www.youtube.com/watch?v=Z2tV86rtndE",
+    transcripturl: "https://www.oogtv.nl/uitzending-gemist/tv/omgeving-zuiderdiep-rademarkt-weeva-en-nieuwsblad-van-het-noorden-benos-stad-13-16-12-1998/"
+  },
+
 
   16: {
     titel: "Grote Markt Noordzijde",
