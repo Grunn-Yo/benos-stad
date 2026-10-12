@@ -170,6 +170,19 @@ const afleveringenData = {
     url: "https://www.youtube.com/watch?v=8qdG1HLirvc"
   },
 
+
+  57: {
+    titel: "Franciscus Gomarus",
+    ondertitel: "Synode van Dordrecht",
+    url: "https://www.youtube.com/watch?v=TSZj3kGZwcQ"
+  },
+
+  58: {
+    titel: "Vorstelijk bezoek Willem I aan Groningen",
+    ondertitel: "",
+    url: "https://www.youtube.com/watch?v=PvwfXMSogPE"
+  },
+
   
 
 };

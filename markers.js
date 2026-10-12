@@ -137,7 +137,7 @@ addMarker(40, 3, 53.22716929538804, 6.579921704612867, "Locatie voormalig Ooster
 addMarker(40, 4, 53.21151262251437, 6.575841917868849, "Locatie voormalig gemeentelijk bad- en waschhuis", false);
 addMarker(40, 5, 53.22941527749215, 6.581187941357561, "Oosterpark, Monument Eltjo Rugge", true);
 
-addMarker(41, 1, 53.219148765763386, 6.569340848952082, "'t Feithhuis", false);
+addMarker([41, 57], 1, 53.219148765763386, 6.569340848952082, "'t Feithhuis", false);
 addMarker(41, 2, 53.21508108893028, 6.559754905281157, "Groningsch Museum", false);
 
 addMarker(42, 1, 53.07563295945945, 6.85989692150328, "Margaretha Hardenbergkerk <br/> Begraafplaats A.G. Wildervank", false);
@@ -194,15 +194,14 @@ addMarker(54, 1, 53.21848431689317, 6.570523215918182, "Het Concerthuis", true);
 
 addMarker(55, 1, 53.21939604206889, 6.568201779907637, "De Martinitoren", false);
 
-addMarker(56, 1, 53.21890541670627, 6.565740328078608, "Woning Carl Rabenhaupt", false);
+addMarker(56, 1, 53.21890541670627, 6.565740328078608, "Woning Carl Rabenhaupt", true);
 addMarker(56, 2, 53.21951227246723, 6.561864482647909, "Kogel 1672", false);
 addMarker(56, 3, 53.221693672536425, 6.5609450584121705, "Huis Carl Rabenhaupt", false);
 addMarker(56, 4, 53.20892077025126, 6.56786901061001, "Rabenhaupt Monument", false);
 
-
-
-
-
+addMarker(57, 1, 53.200868073214835, 6.567491847995982, "Gomarus College", false);
+addMarker(57, 2, 53.22870985858716, 6.5029150826620405, "Gomarusstraat", false);
+addMarker(57, 3, 53.219014, 6.569599, "Gomaruspoortje", false);
 
 
 
