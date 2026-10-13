@@ -40,7 +40,7 @@
           const data = afleveringenData[nr];
           if (!data) return Promise.resolve("");
 
-          const transcriptPath = `transcript/${nr}_transcript.txt`;
+          const transcriptPath = `transcripties/${nr}_transcriptie.txt`;
 
           return fetch(transcriptPath, {
               method: "HEAD"
@@ -55,26 +55,26 @@
 
                 transcriptHTML = `
                   <br>
-                  Zie <a href="transcriptpagina.html?nr=${nr}">
+                  Zie <a href="transcriptiepagina.html?nr=${nr}">
                     hier
-                  </a> het transcript van aflevering ${nr}.
+                  </a> de transcriptie van aflevering ${nr}.
                 `;
 
               }
 
-              // 2. Geen lokaal transcript,
+              // 2. Geen lokale transcriptie,
               //    maar wel een externe transcripturl
               else if (data.transcripturl) {
 
                 transcriptHTML = `
                   <br>
                   Zie <a href="${data.transcripturl}" target="_blank">
-                    hier</a> het transcript van aflevering ${nr}.
+                    hier</a> de transcriptie van aflevering ${nr}.
                 `;
 
               }
 
-              // 3. Geen transcript → geen tekst tonen
+              // 3. Geen transcriptie → geen tekst tonen
               return `
                 <p>
                   Zie <a href="${data.url}" target="_blank">
@@ -86,7 +86,7 @@
 
             .catch(() => {
 
-              // Het lokale transcript kon niet worden gevonden.
+              // De lokale transcriptie kon niet worden gevonden.
               // Kijk daarom of er een externe transcripturl is.
 
               let transcriptHTML = "";
@@ -97,7 +97,7 @@
                   <br>
                   Zie <a href="${data.transcripturl}" target="_blank">
                     hier
-                  </a> het transcript van aflevering ${nr}.
+                  </a> de transcriptie van aflevering ${nr}.
                 `;
 
               }

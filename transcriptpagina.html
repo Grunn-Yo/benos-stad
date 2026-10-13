@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transcript</title>
+  <title>Transcriptie</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,19 +25,19 @@
     if (nr) {
       const data = afleveringenData[nr];
 
-      // Pad naar transcriptbestand
-      const filePath = `transcripts/${nr}_transcript.txt`;
+      // Pad naar transcriptiebestand
+      const filePath = `transcripties/${nr}_transcriptie.txt`;
 
       fetch(filePath)
         .then(response => {
-          if (!response.ok) throw new Error("Transcript niet gevonden");
+          if (!response.ok) throw new Error("Transcriptie niet gevonden");
           return response.text();
         })
         .then(html => {
 
           container.innerHTML = `
             <h1>
-              Transcript Beno's Stad aflevering ${nr}
+              Transcriptie Beno's Stad aflevering ${nr}
               ${data ? `- ${data.titel}` : ""}
             </h1>
 
@@ -57,7 +57,7 @@
         })
         .catch(err => {
           container.innerHTML = `
-            <p>Geen transcript gevonden voor aflevering ${nr}.</p>
+            <p>Geen transcriptie gevonden voor aflevering ${nr}.</p>
           `;
           console.error(err);
         });
