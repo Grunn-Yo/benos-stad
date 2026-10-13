@@ -40,7 +40,7 @@
           const data = afleveringenData[nr];
           if (!data) return Promise.resolve("");
 
-          const transcriptPath = `transcript/aflevering${nr}.txt`;
+          const transcriptPath = `transcript/${nr}_transcript.txt`;
 
           return fetch(transcriptPath, {
               method: "HEAD"
