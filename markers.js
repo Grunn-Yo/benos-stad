@@ -203,5 +203,6 @@ addMarker(57, 1, 53.200868073214835, 6.567491847995982, "Gomarus College", false
 addMarker(57, 2, 53.22870985858716, 6.5029150826620405, "Gomarusstraat", false);
 addMarker(57, 3, 53.219014, 6.569599, "Gomaruspoortje", false);
 
+addMarker(58, 1, 53.220078630744524, 6.563583038698978, "Gouverneurswoning", false);
 
 
